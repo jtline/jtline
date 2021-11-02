@@ -1,0 +1,27 @@
+package DataStructure.BigO;
+
+public class binaryS {
+    private int[]array;
+    public binaryS(int[]array){
+        this.array = array;
+    }
+    public void search(int num){
+        
+        int begin = 0;
+        int end = array.length-1;
+        //should not use for loop using while
+        while(end>=begin){
+            int midnum = (begin+end)/2;
+            System.out.println("start"+midnum);
+            if(array[midnum]==num){
+                System.out.println("find");
+                break;
+            }else if(num>array[midnum]){
+                begin=midnum+1;
+            }else{
+                end = midnum-1;
+            }
+        }
+    }
+    
+}
