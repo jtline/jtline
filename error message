@@ -1,0 +1,8 @@
+//1
+when using two public in a main java it show 
+The public type sto must be defined in its own fileJava(16777541)
+That means you can not use two public class outer in one java file
+
+If .java file contains top level (not nested) public class, it has
+to have the same name as that public class. So if you have class like
+public class A{...} it needs to be placed in A.java file. Because of that we can't have two public classes in one .java file.
