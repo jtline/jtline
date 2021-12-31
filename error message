@@ -6,3 +6,13 @@ That means you can not use two public class outer in one java file
 If .java file contains top level (not nested) public class, it has
 to have the same name as that public class. So if you have class like
 public class A{...} it needs to be placed in A.java file. Because of that we can't have two public classes in one .java file.
+
+//2
+if you use the int i =3 and want to return plus 1 integer
+you must to write 
+return i+1; 
+not
+return i++;
+because i++ is return i and then do the plus 1 movement;
+It is the same to write int p = i++; return p; 
+Because first i give value to p then i+1;
